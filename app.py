@@ -309,7 +309,7 @@ if rutas_finales:
     with m1:
         st.markdown(f"<div class='card'><span class='metric-title'>🏁 DISTANCIA TOTAL COMBINADA</span><br><span class='metric-value'>{(distancia_total_m / 1000):.2f} Km</span></div>", unsafe_allow_html=True)
     with m2:
-        st.markdown(f"<div class='card'><span class='metric-title'>📦 TOTAL MERCANCÍA DESPACHADA</span><br><span class='metric-value'>{carga_total_kg:,} Kg</span></div>", unsafe_allowed_html=True)
+        st.markdown(f"<div class='card'><span class='metric-title'>📦 TOTAL MERCANCÍA DESPACHADA</span><br><span class='metric-value'>{carga_total_kg:,} Kg</span></div>", unsafe_allow_html=True)
     with m3:
         st.markdown(f"<div class='card'><span class='metric-title'>🚚 FLOTA EN MOVIMIENTO</span><br><span class='metric-value'>{furgones_activos} / {num_vehiculos} Furgones</span></div>", unsafe_allow_html=True)
 
