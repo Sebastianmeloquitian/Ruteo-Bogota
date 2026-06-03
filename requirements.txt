@@ -1,0 +1,1 @@
+streamlit>=1.22.0ortools>=9.6.0folium>=0.14.0streamlit-folium>=0.11.1geopy>=2.3.0pandas>=1.5.0
