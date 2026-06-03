@@ -63,7 +63,7 @@ st.markdown("""
             border-color: #3B82F6;
         }
     </style>
-""", unsafe_allowed_html=True)
+""", unsafe_allow_html=True)
 
 # Inicializar Geocoder con un User-Agent único
 geolocator = Nominatim(user_agent="sabor_sabanero_routing_app_v1")
@@ -195,8 +195,8 @@ def extraer_rutas(data, manager, routing, solution):
 # ==========================================
 
 # Título de la Aplicación
-st.markdown("<div class='main-header'>🚚 Sabor Sabanero S.A.S.</div>", unsafe_allowed_html=True)
-st.markdown("<div class='subheader'>Consola de Optimización Inteligente de Ruteo de Vehículos (VRP)</div>", unsafe_allowed_html=True)
+st.markdown("<div class='main-header'>🚚 Sabor Sabanero S.A.S.</div>", unsafe_allow_html=True)
+st.markdown("<div class='subheader'>Consola de Optimización Inteligente de Ruteo de Vehículos (VRP)</div>", unsafe_allow_html=True)
 
 # Sidebar - Gestión de Vehículos y Configuración Global
 st.sidebar.image("https://img.icons8.com/isometric/512/truck.png", width=80)
@@ -307,11 +307,11 @@ if rutas_finales:
     st.subheader("📊 Consolidado de la Operación")
     m1, m2, m3 = st.columns(3)
     with m1:
-        st.markdown(f"<div class='card'><span class='metric-title'>🏁 DISTANCIA TOTAL COMBINADA</span><br><span class='metric-value'>{(distancia_total_m / 1000):.2f} Km</span></div>", unsafe_allowed_html=True)
+        st.markdown(f"<div class='card'><span class='metric-title'>🏁 DISTANCIA TOTAL COMBINADA</span><br><span class='metric-value'>{(distancia_total_m / 1000):.2f} Km</span></div>", unsafe_allow_html=True)
     with m2:
         st.markdown(f"<div class='card'><span class='metric-title'>📦 TOTAL MERCANCÍA DESPACHADA</span><br><span class='metric-value'>{carga_total_kg:,} Kg</span></div>", unsafe_allowed_html=True)
     with m3:
-        st.markdown(f"<div class='card'><span class='metric-title'>🚚 FLOTA EN MOVIMIENTO</span><br><span class='metric-value'>{furgones_activos} / {num_vehiculos} Furgones</span></div>", unsafe_allowed_html=True)
+        st.markdown(f"<div class='card'><span class='metric-title'>🚚 FLOTA EN MOVIMIENTO</span><br><span class='metric-value'>{furgones_activos} / {num_vehiculos} Furgones</span></div>", unsafe_allow_html=True)
 
     # 2. Visualización Dual: Detalle + Mapa en Dos Columnas
     col_det, col_map = st.columns([2, 3])
